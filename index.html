@@ -14,20 +14,20 @@
             <div class="container">
             <nav>
                 <img src="images/Black and White Solid Icon Logo.png" class="logo">
+                <div class="side-menu" id="sideMenu">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                 <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-                    
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>   
                 </ul>
-                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web & Application Developer</p>
-                <h1>Hi,<br>I am <span>Bauba</span> Phala</h1>
+                <h1>Hello world,<br>I am <span>Bauba</span> Phala</h1>
 
         
             </div>
@@ -187,10 +187,6 @@
     </div>
 </div>
 
-
-
-
-
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -206,28 +202,18 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
-    <script>
-       var sidemeu = document.getElementById("sidemenu");
-        
-        function openmenu() {
-            sidemeu.style.right = "0";
-        }
-        
-        function closemenu() {
-            sidemeu.style.right = "-200px";
-        }
-        
-    </script>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwbzp363RDOnn8o_G7QapN5A0T-HJ0AJ-_CsrQlDZJZUTjkfxJGjwyx3_4_fxhAHXTX/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
     </body>
 </html>
