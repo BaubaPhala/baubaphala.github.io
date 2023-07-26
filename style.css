@@ -374,6 +374,11 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+    #msg{
+        color: #fff;
+        margin-top: -10px;
+        display: block;
+    }
 }
 #msg{
     color: #fff;
