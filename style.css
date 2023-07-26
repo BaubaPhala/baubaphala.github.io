@@ -298,6 +298,10 @@ form .btn2{
     margin: 20px;
     cursor: pointer;
 }
+footer{
+    position: relative;
+    
+}
 .copyright{
     width: 100%;
     text-align: center;
@@ -305,6 +309,8 @@ form .btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+    position: absolute;
+    
 }
 /**------css for small screen-----*/
 nav .fa-solid{
