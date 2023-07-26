@@ -378,6 +378,8 @@ nav .fa-solid{
 }
 #msg{
     color: #fff;
-    margin-top: 40px;
-    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+
+    display:inline-block;
 }
