@@ -295,12 +295,11 @@ form input,form textarea{
 form .btn2{
     padding: 14px 60px;
     font-size: 18px;
-    margin: 20px;
+    margin: 15px;
     cursor: pointer;
 }
 footer{
     position: relative;
-    
 }
 .copyright{
     width: 100%;
@@ -310,7 +309,8 @@ footer{
     font-weight: 300;
     margin-top: 20px;
     position: absolute;
-    
+    bottom: 0;
+
 }
 /**------css for small screen-----*/
 nav .fa-solid{
