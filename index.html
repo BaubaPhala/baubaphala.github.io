@@ -176,8 +176,9 @@
                 <input type="text" name="name" placeholder="Enter your Name and Last name" required>
                 <input type="email" name="email" placeholder="Enter your Email" required>
                 <textarea name="Message" rows=" 6" placeholder="Your Message (how can I help you?)"required></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
+                <button type="submit" class="btn btn2">submit</button>
             </form>
+            <span id="msg" ></span>
         </div>
     </div>
     </div>
@@ -213,6 +214,24 @@
         sidemeu.style.right = "-200px";
     }
 </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMxxkP8_U_asFK4gQOwA4KwDOmx1bpdAgYs14ZslC57xATCO0_gpSDOd0-vHWjW0ulzA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully to Mr Phala"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
     </body>
 </html>
